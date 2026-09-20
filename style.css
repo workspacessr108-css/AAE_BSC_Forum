@@ -33,3 +33,28 @@
 .nav-menu a:hover {
     color: #00bcd4;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background: #fff;
+    min-width: 160px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    display: block;
+    padding: 8px 15px;
+}

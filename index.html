@@ -1,28 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>BSC Forum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <div class="logo">BSC Forum</div>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">BSC-Forum</a>
 
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="syllabus.html">Syllabus</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <main>
-        <h1>Welcome to My Website</h1>
-        <p>This is the home page.</p>
-    </main>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
 
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="announcements.html">Announcements</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="resources.html">Resources</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Syllabus
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="book-syllabus.html">Reading</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="lecture-syllabus.html">Hearing</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-lg-7">
+            <h1 class="display-5 fw-bold">Welcome to BSC Forum</h1>
+
+            <p class="lead mt-3">
+                A place to learn, read, discuss, and grow together through
+                meaningful spiritual study and daily practice.
+            </p>
+
+            <div class="mt-4">
+                <a href="book-syllabus.html" class="btn btn-dark me-2">
+                    Explore Syllabus
+                </a>
+
+                <a href="book-syllabus.html" class="btn btn-outline-dark">
+                    Start Reading
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-5 mt-4 mt-lg-0">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h4 class="fw-bold">Today's Practice</h4>
+
+                    <p class="mb-2">
+                        📿 <strong>Japa</strong> — 6:00 AM on Zoom
+                    </p>
+
+                    <p class="mb-0">
+                        📖 <strong>Bhagavad Gita Reading</strong> —
+                        9:00 PM on Zoom
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Resources Section -->
+<section class="container pb-5">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold">Resources</h2>
+
+        <p class="text-muted">
+            Explore useful resources for your study and spiritual practice.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Books -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">📚 Books</h5>
+
+                    <p class="card-text">
+                        Explore recommended books and study materials
+                        for deeper understanding and regular reading.
+                    </p>
+
+                    <a href="book-syllabus.html" class="btn btn-dark">
+                        Explore Books
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reading -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">📖 Reading</h5>
+
+                    <p class="card-text">
+                        Follow the reading plan and access selected
+                        chapters, verses, and study resources.
+                    </p>
+
+                    <a href="book-syllabus.html" class="btn btn-dark">
+                        Start Reading
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Classes -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">🎓 Classes</h5>
+
+                    <p class="card-text">
+                        Find upcoming classes, online sessions,
+                        and opportunities to learn together.
+                    </p>
+
+                    <a href="book-syllabus.html" class="btn btn-dark">
+                        View Classes
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Why Join Section -->
+<section class="bg-light py-5">
+    <div class="container text-center">
+
+        <h2 class="fw-bold mb-4">Grow Through Learning</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <h5>Learn</h5>
+                <p class="text-muted">
+                    Study spiritual books and timeless teachings
+                    at your own pace.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Practice</h5>
+                <p class="text-muted">
+                    Build a regular routine of reading, chanting,
+                    and personal reflection.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Connect</h5>
+                <p class="text-muted">
+                    Participate in discussions, classes, and
+                    shared learning experiences.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
